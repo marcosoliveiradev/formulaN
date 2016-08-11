@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="formulaNPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>formulan.model.Motor</class>
+    <class>formulan.model.Pais</class>
+    <class>formulan.model.Pista</class>
+    <class>formulan.model.Piloto</class>
+    <class>formulan.model.EquipeAno</class>
+    <class>formulan.model.Equipe</class>
+    <class>formulan.model.Temporada</class>
+    <class>formulan.model.Pontos</class>
+    <class>formulan.model.Corrida</class>
+    <class>formulan.model.Contrato</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/formula?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="usbw"/>
+    </properties>
+  </persistence-unit>
+</persistence>
